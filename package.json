@@ -1,0 +1,11 @@
+{
+  "name": "influx-demo",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "influx": "^5.9.2",
+    "lodash": "^4.17.21"
+  },
+  "scripts": {
+    "start": "node p1query.js"
+  }
+}
