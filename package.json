@@ -4,9 +4,15 @@
     "dotenv": "^10.0.0",
     "got": "^11.8.2",
     "influx": "^5.9.2",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "ts-node": "^10.0.0",
+    "uuid": "^8.3.2"
   },
   "scripts": {
-    "start": "node p2query.js"
+    "start": "ts-node p1data.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.4",
+    "typescript": "^4.3.4"
   }
 }

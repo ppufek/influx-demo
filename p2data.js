@@ -15,7 +15,7 @@ const startTS = 1609746029444 //Mon, 04 Jan 2021 07:40:29 GMT
 const endTS = 1612338099808 //Wed, 03 Feb 2021 07:41:39 GMT
 
 //returns all list of APIs to process for a particular symbol
-const getReqArray = ({ symbol, fromTS, toTS, timeframe }) => {
+const getReqArray = ({symbol, fromTS, toTS, timeframe}) => {
   const tfw = {
     '1m': 1 * 60 * 1000,
   };
@@ -27,7 +27,7 @@ const getReqArray = ({ symbol, fromTS, toTS, timeframe }) => {
   })
 }
 
-loadData = async ({ symbol }) => {
+loadData = async ({symbol}) => {
   try {
     const reqArray = getReqArray({
       symbol,
@@ -67,4 +67,4 @@ loadData = async ({ symbol }) => {
   }
 }
 
-loadData({ symbol: 'ETHUSDT' })
+loadData({symbol: 'ETHUSDT'})
