@@ -4,7 +4,7 @@ const _ = require('lodash')
 const Influx = require('influx')
 
 const client = new Influx.InfluxDB({
-  database: 'monalisa_db',
+  database: process.env.DB,
   host: process.env.HOST,
   port: process.env.VIEWPORT
 })
